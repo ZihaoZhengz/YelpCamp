@@ -1,0 +1,41 @@
+<% layout("layouts/boilerplate") %>
+    <div class="container d-flex justify-content-center align-items-center mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+                <div class="card shadow">
+                    <img src="https://images.unsplash.com/photo-1504106379193-10da019d1e9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mjh8NDgzMjUxfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Register</h5>
+                        <form action="/register" method="post" novalidate class="validated-form">
+                            <div class="mb-3">
+                                <label for="username" class="form-lable">Username</label>
+                                <input class="form-control" type="text" name="username" id="username" autofocus
+                                    required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-lable">Email</label>
+                                <input class="form-control" type="email" name="email" id="email" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-lable">Password</label>
+                                <input class="form-control" type="password" name="password" id="password" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <button class="btn btn-success btn-block">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
